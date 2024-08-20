@@ -13,12 +13,7 @@ export default function Index() {
       {/* <Text>Bem vindo ao Museu de carros</Text> */}
       <ImageBackground 
       source={require("../assets/images/dodge-challenger-demon.jpg")}
-      style={{
-        width: "100%",
-        height: "100%",
-        justifyContent: "center",
-        alignItems: "center",
-      }}>
+      style={styles.imgFundo}>
       <Link style={styles.button} href="/museum" >
       <Pressable>
         <Text >Entrar no Museu</Text>
@@ -32,10 +27,10 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 3,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  
+
   },
   button: {
     margin: 10,
@@ -44,9 +39,17 @@ const styles = StyleSheet.create({
     color: '#fff',
     borderRadius: 5,
     textAlign: 'center',
+    top: '45%',
   },
   text: {
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  imgFundo:{
+    resizeMode: 'contain',
+    width: 490,
+    height: 650,
+    justifyContent: "center",
+    alignItems: "center",
   },
 })
