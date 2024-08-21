@@ -1,5 +1,9 @@
-import { Text, View, ImageBackground, Pressable, StyleSheet } from "react-native";
-import{ Link } from "expo-router";
+import { Text, View, ImageBackground, Pressable, StyleSheet, Dimensions } from "react-native";
+import { Link } from "expo-router";
+import { LinearGradient } from 'expo-linear-gradient';
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 
 export default function Index() {
   return (
@@ -10,46 +14,54 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      {/* <Text>Bem vindo ao Museu de carros</Text> */}
-      <ImageBackground 
-      source={require("../assets/images/dodge-challenger-demon.jpg")}
-      style={styles.imgFundo}>
-      <Link style={styles.button} href="/museum" >
-      <Pressable>
-        <Text >Entrar no Museu</Text>
-      </Pressable>
-      </Link>  
+     
+      <ImageBackground
+        source={require("../assets/images/teste.webp")}
+        style={styles.imgFundo}>
+        <LinearGradient
+        // Background Linear Gradient
+        //background: rgb(0,0,0);
+        //background: linear-gradient(176deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6223739495798319) 100%);
+        colors={['rgba(0,0,0,1)', '0%' , 'rgba(0,0,0,0.6223739495798319)', '100%']}
+         />
+        <Text style={styles.txt}>Bem vindo ao Museu de carros</Text>
+
+
+        <Link style={styles.button} href="/museum" >
+          <Pressable>
+            <Text>Entrar no Museu</Text>
+          </Pressable>
+        </Link>
       </ImageBackground>
-      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 3,
+    flex: 1,
     backgroundColor: '#fff',
-  
-
   },
   button: {
     margin: 10,
     padding: 10,
-    backgroundColor: '#333',
+    backgroundColor: '#bbb',
     color: '#fff',
     borderRadius: 5,
     textAlign: 'center',
-    top: '45%',
+    top: '40%',
   },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  imgFundo:{
+  imgFundo: {
+    width: windowWidth * 1,
+    height: windowHeight * 1,
     resizeMode: 'contain',
-    width: 490,
-    height: 650,
     justifyContent: "center",
     alignItems: "center",
+  },
+  txt: {
+    color: "white",
+    fontSize: 20,
+    fontWeight: 'bold',
+    bottom: '35%'
   },
 })
