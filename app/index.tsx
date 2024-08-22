@@ -33,7 +33,7 @@ export default function Index() {
         <Text style={styles.txt}>Bem vindo ao Museu de carros</Text>
 
 
-        <Link style={styles.button} href="/museum" >
+        <Link style={styles.button} href="/museum" asChild>
           <Pressable>
             <Text>Entrar no Museu</Text>
           </Pressable>
@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
   button: {
     margin: 10,
     padding: 10,
-    backgroundColor: '#bbb',
-    color: '#fff',
+    backgroundColor: '#fff',
+    color: 'black',
     borderRadius: 5,
     textAlign: 'center',
     top: '40%',
