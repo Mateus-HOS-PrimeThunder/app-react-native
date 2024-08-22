@@ -19,10 +19,16 @@ export default function Index() {
         source={require("../assets/images/teste.webp")}
         style={styles.imgFundo}>
         <LinearGradient
-        // Background Linear Gradient
-        //background: rgb(0,0,0);
-        //background: linear-gradient(176deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6223739495798319) 100%);
-        colors={['rgba(0,0,0,1)', '0%' , 'rgba(0,0,0,0.6223739495798319)', '100%']}
+        colors={['rgba(0,0,0,0.8)', 'rgba(0,0,0,0.6223739495798319)']}
+        start={{ x:0, y:0}}
+        end={{ x:0, y:1}}
+        style={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0,
+        }}
          />
         <Text style={styles.txt}>Bem vindo ao Museu de carros</Text>
 
