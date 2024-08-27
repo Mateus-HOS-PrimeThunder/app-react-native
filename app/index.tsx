@@ -1,6 +1,7 @@
 import { Text, View, ImageBackground, Pressable, StyleSheet, Dimensions } from "react-native";
 import { Link } from "expo-router";
 import { LinearGradient } from 'expo-linear-gradient';
+import { StatusBar } from "expo-status-bar";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
@@ -14,7 +15,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-     
+     <StatusBar style="auto" />
       <ImageBackground
         source={require("../assets/images/teste.webp")}
         style={styles.imgFundo}>
