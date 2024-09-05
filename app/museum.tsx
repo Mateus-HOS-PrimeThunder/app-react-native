@@ -1,6 +1,6 @@
 import { Text, View, Image, Pressable, StyleSheet, ScrollView } from "react-native";
 import { Link } from "expo-router";
-import list from './products.json';
+import list from './InfoCarros.json';
 
 export default function Museu(){
     return (
