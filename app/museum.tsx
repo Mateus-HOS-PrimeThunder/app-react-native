@@ -5,7 +5,7 @@ import list from './InfoCarros.json';
 export default function Museu(){
     return (
         <ScrollView>
-            <Text>Nosso museu de carros</Text>
+            <Text>Seja bem vindo ao nosso museu de carros</Text>
 
             {list.listProduct.map((item) => (
 
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     itemContainer: {
         flexDirection: 'row',
         marginBottom: 20,
-        backgroundColor: '#F2D8C2',
+        backgroundColor: '#F2D8C5',
         borderRadius: 8,
         padding: 10,
     },
