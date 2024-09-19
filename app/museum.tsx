@@ -1,13 +1,17 @@
-import { Text, View, Image, Pressable, StyleSheet, ScrollView } from "react-native";
+import { Text, View, Image, Pressable, StyleSheet, ScrollView  } from "react-native";
 import { Link } from "expo-router";
+import { Card, Button, Icon } from '@rneui/themed';
+// https://reactnativeelements.com/docs/components/card fremework "bootstrap???"
 import list from './InfoCarros.json';
+import { CardTitle } from "@rneui/base/dist/Card/Card.Title";
+import { CardImage } from "@rneui/base/dist/Card/Card.Image";
 
 export default function Museu(){
     return (
         <ScrollView>
-            <Text>Seja bem vindo ao nosso museu de carros</Text>
+            {/* <Text>Seja bem vindo ao nosso museu de carros</Text>
 
-            {list.listProduct.map((item) => (
+            {list.listCars.map((item) => (
 
 <Link
     key={item.id}
@@ -23,6 +27,36 @@ export default function Museu(){
         </View>
     </View>
 </Link>
+
+))
+} */}
+
+
+{list.listCars.map((item) => (
+    
+    <Card>
+        {/* key={item.id}
+    href={{
+        pathname: "./carsingle/[id]",
+        params: { id: item.id }
+    }}> */}
+          <Card.Title style={styles.titleProduct}>{item.title}</Card.Title>
+          <Card.Image
+          source={{ uri: item.image }} style={{ padding: 0}}
+          />
+          <Text style={{ marginBottom: 10 }}>
+            {item.description}
+          </Text>
+          <Button
+            buttonStyle={{
+              borderRadius: 0,
+              marginLeft: 0,
+              marginRight: 0,
+              marginBottom: 0,
+            }}
+            title="Detalhes"
+          />
+        </Card>
 
 ))
 }
@@ -49,8 +83,8 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     image: {
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 200,
         borderRadius: 8,
     },
     textContainer: {

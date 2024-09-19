@@ -1,5 +1,5 @@
 {
-    "listProduct": [
+    "listCars": [
         {
             "id": 1,
             "title": "Ferrari Enzo",
@@ -15,25 +15,25 @@
         {
             "id": 3,
             "title": "Bugatti Chiron",
-            "description": "Java é robusto e fortemente tipado, assim como o cappuccino é uma mistura equilibrada de café e leite",
+            "description": "O Bugatti Chiron é uma obra-prima da engenharia automotiva, projetado para oferecer uma experiência de condução incomparável. Este hiperesportivo francês combina um design futurista com uma potência impressionante, equipada com um motor W16 de 8 litros e 1.500 cavalos de potência. ",
             "image": "../assets/images/carros/bugattiChiron.jpg"
         },
         {
             "id": 4,
             "title": "Dodge Challenger Demon",
-            "description": "Assim como o mocha é uma combinação de café e chocolate, JavaScript combina elementos de várias linguagens e é versátil em aplicação, assim como o mocha é versátil em sabor",
+            "description": "O Dodge Challenger Demon é uma máquina de desempenho extrema que encapsula a essência do muscle car americano. Com um motor V8 HEMI de 6.2 litros sobrealimentado, que entrega impressionantes 840 cavalos de potência, o Demon é projetado para conquistar as pistas de drag e acelerar de 0 a 100 km/h em apenas 2,3 segundos.",
             "image": "../assets/images/carros/ChallengerDemon.jfif"
         },
         {
             "id": 5,
             "title": "Koenigsegg Jesko",
-            "description": "Swift é moderno, ágil e focado no desenvolvimento para dispositivos Apple, assim como o macchiato é uma variação focada e concentrada de café",
+            "description": "O Koenigsegg Jesko é uma obra-prima da engenharia de hiperesportivos, projetado para redefinir os limites da velocidade e do desempenho. Equipado com um motor V8 biturbo de 5.0 litros, que gera até 1.600 cavalos de potência com combustível de alta octanagem, o Jesko promete uma aceleração vertiginosa e uma experiência de condução incomparável.",
             "image": "../assets/images/carros/Jesko.webp"
         },
         {
             "id": 6,
             "title": "Fiat Uno",
-            "description": "Ruby é conhecido por sua elegância e é frequentemente usado para criar aplicações web interativas, assim como o affogato combina café e sorvete de maneira única",
+            "description": "O Fiat é um ícone da indústria automobilística, conhecido por sua combinação de estilo, eficiência e inovação. Com raízes na Itália, a marca tem uma longa história que remonta a 1899, trazendo modelos que vão desde compactos ágeis até SUVs robustos.",
             "image": "../assets/images/carros/fiatUno.webp"
         }
     ]
